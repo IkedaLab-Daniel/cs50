@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Based on timing observation, sort1 was fast on sorted input but SLOWER on reversed and random input. Bubble Sort exits early when no swaps are needed, so sorted input runs in O(n). In theo ther hand, Reversed and random input may take O(n^2)
+
+sort2 uses: Merge Sort
+
+How do you know?: sort2 ran fast on all input types—sorted, reversed, and random at similar speed. Merge sort always runs in O(n log n) regardless of input order
+
+sort3 uses: Selection Sort
+
+How do you know?: sort3 was slow on all input types—sorted, reversed, as well as in random. Selection sort always scans the FULL unsorted portion to find the minimum, so, it takes O(n^2) no matter the input order
