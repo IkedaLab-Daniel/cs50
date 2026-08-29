@@ -3,7 +3,15 @@
 
 int main(void)
 {
-    char *s = "Hello!";
-    printf("%p\n", s);
-    printf("%p\n", &s[0]);
+    string s = get_string("s: ");
+    string t = get_string("t: ");
+
+    if (s == t)
+    {
+        printf("Same\n");
+    }
+    else
+    {
+        printf("Different\n");
+    }
 }
