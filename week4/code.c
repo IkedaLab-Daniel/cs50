@@ -10,10 +10,7 @@ int main(void)
 
     char *t = malloc(strlen(s) + 1);
 
-    for (int i = 0, n = strlen(s); i <= n; i++)
-    {
-        t[i] = s[i];
-    }
+    strcpy(t, s);
 
     t[0] = toupper(t[0]);
 
