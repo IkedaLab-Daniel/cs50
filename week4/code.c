@@ -7,8 +7,16 @@
 int main(void)
 {
     char *s = get_string("s: ");
+    if (s == NULL)
+    {
+        return 1;
+    }
 
     char *t = malloc(strlen(s) + 1);
+    if (t == NULL)
+    {
+        return 1;
+    }
 
     strcpy(t, s);
 
